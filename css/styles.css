@@ -385,11 +385,26 @@ body.modal-open { overflow: hidden; }
    SMALL SCREENS
    ========================================================= */
 @media (max-width: 720px) {
+  /* Header: logo + Join button on one row; section links hidden on phones */
+  .site-header { padding-top: 20px; padding-bottom: 20px; flex-wrap: nowrap; }
+  .brand { font-size: 20px; gap: 10px; }
+  .brand img { width: 34px; }
   .site-nav { gap: 18px; }
+  .site-nav a:not(.btn) { display: none; }
+  .site-nav .btn { padding: 11px 16px; font-size: 14px; white-space: nowrap; }
+
+  /* Hero: BG shown clearly in a video band at the top, text below it */
+  .hero { background: var(--ink); }
+  .hero__media { top: 84px; bottom: auto; height: 470px; background: var(--ink); }
+  .hero__media video { object-position: 96% 0%; }
+  .hero__shade {
+    background: linear-gradient(180deg, rgba(11,11,12,0.35) 0%, rgba(11,11,12,0) 12%, rgba(11,11,12,0) 55%, #0B0B0C 100%);
+  }
+  .hero__body { padding-top: 330px; }
   .hero__title { font-size: clamp(56px, 17vw, 80px); }
   .join__pitch h2 { font-size: clamp(48px, 14vw, 68px); }
   .blueprint .section-head h2 { font-size: clamp(48px, 14vw, 56px); }
-  .hero__body { padding-top: 40px; padding-bottom: 88px; }
+  .hero__body { padding-bottom: 88px; }
   .statement { padding-top: 104px; padding-bottom: 104px; }
   .section-pad { padding-top: 96px; padding-bottom: 96px; }
   .join { padding-top: 104px; padding-bottom: 104px; }
