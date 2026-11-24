@@ -252,13 +252,14 @@ body.modal-open { overflow: hidden; }
 }
 .product__type { margin-top: 10px; font-weight: 600; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-deep); }
 .product__name { margin: 0; font-stretch: 75%; font-weight: 900; font-size: 30px; line-height: 1; text-transform: uppercase; }
-.product__desc { margin: 0; font-size: 17px; line-height: 1.6; color: var(--text-on-paper); }
+.product__desc { margin: 0 0 6px; font-size: 17px; line-height: 1.6; color: var(--text-on-paper); }
 .product__link {
-  align-self: flex-start; display: inline-flex; align-items: center;
-  color: var(--ink); font-weight: 800; font-size: 15px; text-decoration: none;
-  border-bottom: 1.5px solid var(--ink); padding: 8px 0; min-height: 44px;
+  align-self: flex-start; display: inline-flex; align-items: center; justify-content: center;
+  margin-top: auto; color: var(--ink); font-weight: 800; font-size: 16px; text-decoration: none;
+  border: 1.5px solid var(--gold); padding: 16px 24px; min-height: 44px;
+  transition: background-color .15s, color .15s;
 }
-.product__link:hover { color: var(--gold-deep); border-color: var(--gold-deep); }
+.product__link:hover { background: var(--gold); color: var(--ink); }
 
 /* =========================================================
    JOBSITE RULES
