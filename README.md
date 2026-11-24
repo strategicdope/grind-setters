@@ -32,3 +32,4 @@ assets/video/     hero-loop.mp4 (muted background), watch-bg.mp4 (Watch BG popup
 - New colors go in `:root` as tokens, never as one-off hexes in markup.
 - New images go in `assets/img/`, with real `alt` text.
 - Checkout links: the two `TODO` comments in the Join section mark where the Stripe payment links go.
+- After changing `css/styles.css` or `js/main.js`, bump the `?v=` number on their links in `index.html` so browsers fetch the new file instead of a cached copy.
